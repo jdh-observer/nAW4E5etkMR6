@@ -1,44 +1,85 @@
 # Report for article.ipynb ❤ 
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 ## Cell Counts   
-**all cells: 113 **  
-code_empty: 1   
+**all cells: 111**  
+code_empty: 0   
 markdown: 69   
-code: 44   
+code: 42   
 
 ## Action Outputs
 
 ### Size
-**total cells: 113**
+**total cells: 111**
+## Kernel Checks: 
+
+> [!CAUTION]
+ > Error: Python versions don't match. The notebook is using **python-3.10.11**, when **python-3.9** is required.
+
+> [!TIP]
+ > Try changing **runtime.txt** to resolve the error above.
 
 ### Citations Found with problem:
 
 
-### Check Output Sizes and Rules
-  - No valid tags found for image output  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=5)- Output cell 5 size: 1408.40 KB
-> First words of input cell: from IPython.display import Image display(Image("media/cover_image.png"))
-  - Valid tag: figure-wordcloud-* for image output in cell 22
-  - No valid tags found for image output  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=51)- Output cell 51 size: 2092.79 KB
-> First words of input cell: display(Image("media/nn_homepage.png"))
-  - No valid tags found for image output  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=53)  - No valid tags found for image output  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=55)- Output cell 55 size: 1208.50 KB
-> First words of input cell: display(Image("media/nn_first_commit_repo_anon.png"))
-  - No valid tags found for image output  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=88)- Table found in output of cell 92
-> First words of input cell: import networkx as nx import
-  - No valid tags found for image output  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=96)  - No valid tags found for image output  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=98)  - No valid tags found for image output  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=100)  - No valid tags found for image output  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=102)  - Valid tag: figure-customize-* for image output in cell 109
+### Check HTML
+- Cell 89 - Encountered a start tag: https:
+- Cell 89 - Encountered an end tag: https:
+- Cell 89 - Encountered a start tag: https:
+- Cell 89 - Encountered a start tag: https:
+- Cell 89 - Encountered a start tag: https:
+- Cell 89 - Encountered a start tag: https:
 
-Total output size: 7512.37 KB
+
+### Check Output Sizes and Rules
+- Output cell 5 size: 1408.40 KB
+> First words of input cell: from IPython.display import Image display(Image("media/cover_image.png"))
+- Output cell 50 size: 2092.79 KB
+> First words of input cell: display(Image("media/nn_homepage.png"))
+- Output cell 54 size: 1503.04 KB
+> First words of input cell: display(Image("media/nn_first_commit_repo.png"))
+- Table found in output of cell 91
+> First words of input cell: import networkx as nx import
+- Output cell 106 size: 1288.37 KB
+> First words of input cell: display(Image("media/attribute_filter.gif"))
+
+Total output size: 9979.18 KB
 Total number of images: 11
 Total number of tables: 1
+Total number of audios: 1
 
-### Check HTML
-- Cell 90 - Encountered a start tag: https:
-- Cell 90 - Encountered an end tag: https:
-- Cell 90 - Encountered a start tag: https:
-- Cell 90 - Encountered a start tag: https:
+> [!WARNING]
+> Notebook's output contains **text/plain** which is deprecated.
 
+| Mimetype | Presence |
+| --- | --- |
+| text/html | True |
+| text/plain | True |
+| image/png | True |
+| audio | False |
 
-### Check JavaScript
-No JavaScript code found in output cells.
+| Output type | Presence |
+| --- | --- |
+| display_data | True |
+| execute_result | True |
+
+| Tag | Cell | Remark |
+| --- | --- | --- |
+| image/png | 5 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZ0ZW1wJTJGYXJ0aWNsZS5pcHluYg==?idx=5) |
+| image/png | 21 | Correct tagging |
+| image/png | 50 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZ0ZW1wJTJGYXJ0aWNsZS5pcHluYg==?idx=50) |
+| image/png | 52 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZ0ZW1wJTJGYXJ0aWNsZS5pcHluYg==?idx=52) |
+| image/png | 54 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZ0ZW1wJTJGYXJ0aWNsZS5pcHluYg==?idx=54) |
+| image/png | 87 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZ0ZW1wJTJGYXJ0aWNsZS5pcHluYg==?idx=87) |
+| text/html | 91 | Table is not tagged properly |
+| image/png | 95 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZ0ZW1wJTJGYXJ0aWNsZS5pcHluYg==?idx=95) |
+| image/png | 97 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZ0ZW1wJTJGYXJ0aWNsZS5pcHluYg==?idx=97) |
+| image/png | 99 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZ0ZW1wJTJGYXJ0aWNsZS5pcHluYg==?idx=99) |
+| image/png | 101 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZ0ZW1wJTJGYXJ0aWNsZS5pcHluYg==?idx=101) |
+| text/plain | 104 | Should be replaced |
+| text/plain | 106 | Should be replaced |
+| image/png | 108 | Correct tagging |
 
 
 ### Check Tags
@@ -53,17 +94,18 @@ No JavaScript code found in output cells.
 - Cell 10: Tags: ['narrative']
 - Cell 11: Tags: ['hermeneutics']
 - Cell 12: Tags: ['hermeneutics']
+- Cell 13: Tags: ['hermeneutics']
 - Cell 14: Tags: ['hermeneutics']
 - Cell 15: Tags: ['hermeneutics']
 - Cell 16: Tags: ['hermeneutics']
 - Cell 17: Tags: ['hermeneutics']
-- Cell 18: Tags: ['hermeneutics']
-- Cell 19: Tags: ['figure-whatisdh-tools-*', 'narrative', 'hermeneutics']
+- Cell 18: Tags: ['figure-whatisdh-tools-*', 'narrative', 'hermeneutics']
   - Invalid tag: figure-whatisdh-tools-*
-- Cell 20: Tags: ['hermeneutics']
-- Cell 22: Tags: ['figure-wordcloud-*', 'narrative', 'hermeneutics']
-- Cell 23: Tags: ['hermeneutics']
-- Cell 24: Tags: ['narrative']
+- Cell 19: Tags: ['hermeneutics']
+- Cell 21: Tags: ['figure-wordcloud-*', 'narrative', 'hermeneutics']
+- Cell 22: Tags: ['hermeneutics']
+- Cell 23: Tags: ['narrative']
+- Cell 24: Tags: ['hermeneutics']
 - Cell 25: Tags: ['hermeneutics']
 - Cell 26: Tags: ['hermeneutics']
 - Cell 27: Tags: ['hermeneutics']
@@ -78,95 +120,93 @@ No JavaScript code found in output cells.
 - Cell 36: Tags: ['hermeneutics']
 - Cell 37: Tags: ['hermeneutics']
 - Cell 38: Tags: ['hermeneutics']
-- Cell 39: Tags: ['hermeneutics']
-- Cell 40: Tags: ['figure-network-tools-over-time-chart-*', 'narrative', 'hermeneutics']
+- Cell 39: Tags: ['figure-network-tools-over-time-chart-*', 'narrative', 'hermeneutics']
   - Invalid tag: figure-network-tools-over-time-chart-*
+- Cell 40: Tags: ['hermeneutics']
 - Cell 41: Tags: ['hermeneutics']
-- Cell 42: Tags: ['hermeneutics']
-- Cell 43: Tags: ['figure-relatie-popularity-chart-*', 'narrative', 'hermeneutics']
+- Cell 42: Tags: ['figure-relatie-popularity-chart-*', 'narrative', 'hermeneutics']
   - Invalid tag: figure-relatie-popularity-chart-*
-- Cell 44: Tags: ['narrative']
+- Cell 43: Tags: ['narrative']
+- Cell 44: Tags: ['hermeneutics']
 - Cell 45: Tags: ['hermeneutics']
-- Cell 46: Tags: ['hermeneutics']
-- Cell 47: Tags: ['figure-nn-chart-*', 'narrative', 'hermeneutics']
+- Cell 46: Tags: ['figure-nn-chart-*', 'narrative', 'hermeneutics']
   - Invalid tag: figure-nn-chart-*
-- Cell 48: Tags: ['narrative']
-- Cell 50: Tags: ['narrative']
-- Cell 51: Tags: ['figure-nn-homepage-*', 'narrative']
+- Cell 47: Tags: ['narrative']
+- Cell 49: Tags: ['narrative']
+- Cell 50: Tags: ['figure-nn-homepage-*', 'narrative']
   - Invalid tag: figure-nn-homepage-*
-- Cell 52: Tags: ['narrative']
-- Cell 53: Tags: ['figure-nn-original-homepage-*', 'narrative']
+- Cell 51: Tags: ['narrative']
+- Cell 52: Tags: ['figure-nn-original-homepage-*', 'narrative']
   - Invalid tag: figure-nn-original-homepage-*
-- Cell 54: Tags: ['narrative']
-- Cell 55: Tags: ['figure-nn-first-commit-repo-*', 'narrative']
+- Cell 53: Tags: ['narrative']
+- Cell 54: Tags: ['figure-nn-first-commit-repo-*', 'narrative']
   - Invalid tag: figure-nn-first-commit-repo-*
-- Cell 56: Tags: ['narrative']
-- Cell 57: Tags: ['hermeneutics']
+- Cell 55: Tags: ['narrative']
+- Cell 56: Tags: ['hermeneutics']
+- Cell 57: Tags: ['narrative']
 - Cell 58: Tags: ['narrative']
-- Cell 59: Tags: ['narrative']
+- Cell 59: Tags: ['hermeneutics']
 - Cell 60: Tags: ['hermeneutics']
 - Cell 61: Tags: ['hermeneutics']
 - Cell 62: Tags: ['hermeneutics']
 - Cell 63: Tags: ['hermeneutics']
-- Cell 64: Tags: ['hermeneutics']
-- Cell 66: Tags: ['figure-infrastructure-tool-chart-*', 'narrative', 'hermeneutics']
+- Cell 65: Tags: ['figure-infrastructure-tool-chart-*', 'narrative', 'hermeneutics']
   - Invalid tag: figure-infrastructure-tool-chart-*
-- Cell 67: Tags: ['hermeneutics']
+- Cell 66: Tags: ['hermeneutics']
+- Cell 67: Tags: ['narrative']
 - Cell 68: Tags: ['narrative']
-- Cell 69: Tags: ['narrative']
+- Cell 69: Tags: ['hermeneutics']
 - Cell 70: Tags: ['hermeneutics']
 - Cell 71: Tags: ['hermeneutics']
-- Cell 72: Tags: ['hermeneutics']
-- Cell 73: Tags: ['figure-network-analysis-chart-*', 'narrative', 'hermeneutics']
+- Cell 72: Tags: ['figure-network-analysis-chart-*', 'narrative', 'hermeneutics']
   - Invalid tag: figure-network-analysis-chart-*
-- Cell 74: Tags: ['hermeneutics']
+- Cell 73: Tags: ['hermeneutics']
+- Cell 74: Tags: ['narrative']
 - Cell 75: Tags: ['narrative']
 - Cell 76: Tags: ['narrative']
 - Cell 77: Tags: ['narrative']
 - Cell 78: Tags: ['narrative']
-- Cell 79: Tags: ['narrative']
+- Cell 79: Tags: ['hermeneutics']
 - Cell 80: Tags: ['hermeneutics']
 - Cell 81: Tags: ['hermeneutics']
-- Cell 82: Tags: ['hermeneutics']
-- Cell 83: Tags: ['figure-tool-algorithmic-criticism-chart-*', 'narrative', 'hermeneutics']
+- Cell 82: Tags: ['figure-tool-algorithmic-criticism-chart-*', 'narrative', 'hermeneutics']
   - Invalid tag: figure-tool-algorithmic-criticism-chart-*
-- Cell 84: Tags: ['hermeneutics']
-- Cell 85: Tags: ['narrative']
-- Cell 87: Tags: ['narrative']
-- Cell 88: Tags: ['figure-nn-feature-wishlist-*', 'narrative']
+- Cell 83: Tags: ['hermeneutics']
+- Cell 84: Tags: ['narrative']
+- Cell 86: Tags: ['narrative']
+- Cell 87: Tags: ['figure-nn-feature-wishlist-*', 'narrative']
   - Invalid tag: figure-nn-feature-wishlist-*
-- Cell 89: Tags: ['narrative']
-- Cell 90: Tags: ['hermeneutics']
-- Cell 91: Tags: ['narrative']
-- Cell 92: Tags: ['table-six-degrees-*', 'narrative', 'hermeneutics', 'data-table']
+- Cell 88: Tags: ['narrative']
+- Cell 89: Tags: ['hermeneutics']
+- Cell 90: Tags: ['narrative']
+- Cell 91: Tags: ['table-six-degrees-*', 'narrative', 'hermeneutics']
   - Invalid tag: table-six-degrees-*
-  - Invalid tag: data-table
-- Cell 93: Tags: ['narrative']
-- Cell 94: Tags: ['hermeneutics']
-- Cell 95: Tags: ['narrative']
-- Cell 96: Tags: ['figure-nn-first-commit-*', 'narrative']
+- Cell 92: Tags: ['narrative']
+- Cell 93: Tags: ['hermeneutics']
+- Cell 94: Tags: ['narrative']
+- Cell 95: Tags: ['figure-nn-first-commit-*', 'narrative']
   - Invalid tag: figure-nn-first-commit-*
-- Cell 97: Tags: ['narrative']
-- Cell 98: Tags: ['figure-networkx-graph-*', 'narrative', 'hermeneutics']
+- Cell 96: Tags: ['narrative']
+- Cell 97: Tags: ['figure-networkx-graph-*', 'narrative', 'hermeneutics']
   - Invalid tag: figure-networkx-graph-*
-- Cell 99: Tags: ['narrative']
-- Cell 100: Tags: ['figure-nn-commit-list-*', 'narrative']
+- Cell 98: Tags: ['narrative']
+- Cell 99: Tags: ['figure-nn-commit-list-*', 'narrative']
   - Invalid tag: figure-nn-commit-list-*
-- Cell 101: Tags: ['narrative']
-- Cell 102: Tags: ['figure-nn-october-meeting-*', 'narrative']
+- Cell 100: Tags: ['narrative']
+- Cell 101: Tags: ['figure-nn-october-meeting-*', 'narrative']
   - Invalid tag: figure-nn-october-meeting-*
-- Cell 103: Tags: ['narrative']
-- Cell 104: Tags: ['hermeneutics']
-- Cell 105: Tags: ['figure-select-viz-*', 'narrative']
+- Cell 102: Tags: ['narrative']
+- Cell 103: Tags: ['hermeneutics']
+- Cell 104: Tags: ['figure-select-viz-*', 'narrative']
   - Invalid tag: figure-select-viz-*
-- Cell 107: Tags: ['figure-attribute-filter-*', 'narrative']
+- Cell 106: Tags: ['figure-attribute-filter-*', 'narrative']
   - Invalid tag: figure-attribute-filter-*
-- Cell 108: Tags: ['narrative']
-- Cell 109: Tags: ['figure-customize-*', 'narrative']
-- Cell 110: Tags: ['narrative']
-- Cell 112: Tags: ['narrative']
-
-**WARNING: The following tags are missing or invalid:**
+- Cell 107: Tags: ['narrative']
+- Cell 108: Tags: ['figure-customize-*', 'narrative']
+- Cell 109: Tags: ['narrative']
+- Cell 111: Tags: ['narrative']
+> [!WARNING]
+> The following tags are missing or invalid
 
 #### Invalid Tags:
 - figure-whatisdh-tools-*
@@ -181,7 +221,6 @@ No JavaScript code found in output cells.
 - figure-tool-algorithmic-criticism-chart-*
 - figure-nn-feature-wishlist-*
 - table-six-degrees-*
-- data-table
 - figure-nn-first-commit-*
 - figure-networkx-graph-*
 - figure-nn-commit-list-*
@@ -192,18 +231,95 @@ No JavaScript code found in output cells.
 
 ### Check URLs
 
-**Invalid URLs (404 - 1):**
 
-Invalid URL (404): https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/
+> [!CAUTION]
+> **Invalid URLs are present, please review the referenced URLs list.**
 
-**Impossible to verify (Other - 2):**
+**Invalid URLs (404 - 13):**
 
-Invalid URL (Other - 301): https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/
+
+> [!WARNING]
+> **Invalid URL (404):** https://github.com/hepplerj/whatisdigitalhumanities.
+
+> [!WARNING]
+> **Invalid URL (404):** https://weltliteratur.net/dh-tools-used-in-research/,
+
+> [!WARNING]
+> **Invalid URL (404):** https://doi.org/10.34666/k1de-j489,
+
+> [!WARNING]
+> **Invalid URL (404):** https://dh-abstracts.library.virginia.edu/downloads.
+
+> [!WARNING]
+> **Invalid URL (404):** https://github.com/Digital-Humanities-Quarterly/dhq-journal/tree/main/data/dhq-xml.
+
+> [!WARNING]
+> **Invalid URL (404):** https://github.com/ZoeLeBlanc/dhq_scraper.
+
+> [!WARNING]
+> **Invalid URL (404):** https://github.com/jrladd/network_navigator.
+
+> [!WARNING]
+> **Invalid URL (404):** https://networknavigator.jrladd.com/,
+
+> [!WARNING]
+> **Invalid URL (404):** https://getbootstrap.com/docs/4.0/about/history/>
+
+> [!WARNING]
+> **Invalid URL (404):** https://github.com/EvanLi/Github-Ranking/blob/master/Top100/Top-100-stars.md>.
+
+> [!WARNING]
+> **Invalid URL (404):** https://raw.githubusercontent.com/melaniewalsh/sample-social-network-datasets/master/sample-datasets/quakers/quaker-edges.csv"
+
+> [!WARNING]
+> **Invalid URL (404):** https://networkx.org/documentation/stable/developer/about_us.html,
+
+> [!WARNING]
+> **Invalid URL (404):** https://graphology.github.io/,
+
+**Impossible to verify (non-404 error code - 5):**
+
+Invalid URL (Other - 301): https://orcid.org/sites/default/files/images/orcid_16x16.png
 Invalid URL (Other - 403): https://www.canva.com/ai-image-generator/
+Invalid URL (Other - 301): http://tapor.ca/tools/category/Network%20Analysis.
+Invalid URL (Other - 302): https://dh-abstracts.library.cmu.edu.
+Invalid URL (Other - 302): https://github.com/jrladd/network_navigator/pull/7>.
 
-**Valid URLs (200 - 2):**
+> [!TIP]
+> Even if some of the urls listed above don't seem to be broken, try to replace them with the valid ones as they might become unavailable soon.
 
-Valid URL (200): https://creativecommons.org/licenses/by-nc-nd/4.0/
-Valid URL (200): https://github.com/jdh-observer/nAW4E5etkMR6/blob/main/explorations/notebooks/CountingTools.ipynb
 
+**Valid URLs (200 - 17):**
+
+2. https://orcid.org/0000-0002-5440-062X
+3. https://orcid.org/0000-0003-2012-8805
+4. https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png
+5. https://creativecommons.org/licenses/by-nc-nd/4.0/
+13. https://digitalhumanities.org/dhq/
+18. https://github.com/gephi/gephi/commit/c1a1b8316427b1e5c6e0ea5ea8031a016b7ba2c1
+19. https://web.archive.org/web/20080912001706/https://gephi.org/
+22. https://stackoverflow.com/questions/29288592/bootstrap-min-css-size-from-cdn-shows-a-surprising-size-in-devtools>.
+23. https://github.com/jrladd/network_navigator/issues/3>
+27. https://felix-kling.de/jsnetworkx/
+28. https://d3js.org
+29. https://www.khronos.org/api/webgl
+30. https://d3js.org/what-is-d3#d3-is-for-bespoke-visualization
+32. https://www.sigmajs.org/
+33. http://vis.stanford.edu/papers/d3
+34. https://medialab.sciencespo.fr/en/tools/
+35. https://github.com/melaniewalsh/sample-social-network-datasets
+
+
+### Check JavaScript
+**WARNING: 7 output cells contain JavaScript code.**
+
+-  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZ0ZW1wJTJGYXJ0aWNsZS5pcHluYg==?idx=18)
+-  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZ0ZW1wJTJGYXJ0aWNsZS5pcHluYg==?idx=39)
+-  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZ0ZW1wJTJGYXJ0aWNsZS5pcHluYg==?idx=42)
+-  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZ0ZW1wJTJGYXJ0aWNsZS5pcHluYg==?idx=46)
+-  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZ0ZW1wJTJGYXJ0aWNsZS5pcHluYg==?idx=65)
+-  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZ0ZW1wJTJGYXJ0aWNsZS5pcHluYg==?idx=72)
+-  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZ0ZW1wJTJGYXJ0aWNsZS5pcHluYg==?idx=82)
+### Check JavaScript (plotly)
+**plotly** library is not present in **requirements.txt**
 
