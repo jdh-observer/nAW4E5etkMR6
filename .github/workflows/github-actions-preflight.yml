@@ -14,7 +14,7 @@ jobs:
         id: extract_branch
       - name: preflight
         id: preflight
-        uses: c2dh/journal-of-digital-history-ipynb-preflight-action@master
+        uses: c2dh/journal-of-digital-history-ipynb-preflight-action@dev
         with:
           notebook: 'article.ipynb'
           functions: 'checkkernel,checkcitation,checkhtml,checkoutput,checktags,checkurls,checkjavascript'
