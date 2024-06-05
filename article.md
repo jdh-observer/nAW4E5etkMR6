@@ -18,23 +18,23 @@ jupyter:
 <!-- #endregion -->
 
 <!-- #region tags=["contributor"] -->
- ### John R. Ladd [![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-5440-062X) 
+ ### John R. Ladd [![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-5440-062X)
 Washington and Jefferson College
 <!-- #endregion -->
 
 <!-- #region tags=["contributor"] -->
-### Zoe LeBlanc [![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0003-2012-8805) 
+### Zoe LeBlanc [![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0003-2012-8805)
 University of Illinois Urbana-Champaign
 <!-- #endregion -->
 
 <!-- #region tags=["copyright"] -->
-[![cc-by-nc-nd](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/) 
+[![cc-by-nc-nd](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 © John R. Ladd and Zoe LeBlanc. Published by De Gruyter in cooperation with the University of Luxembourg Centre for Contemporary and Digital History. This is an Open Access article distributed under the terms of the [Creative Commons Attribution License CC-BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 <!-- #endregion -->
 
 ```python jdh={"module": "object", "object": {"source": ["Cover image for article. Generated using Canva's AI Tool with the terms network analysis, digital humanities, and tools."], "type": "image"}} tags=["cover"]
-from IPython.display import Image 
+from IPython.display import Image
 
 display(Image("media/cover_image.png"))
 ```
@@ -54,7 +54,7 @@ This article will explore the role of network analysis research tools as/in scho
 ## Nodes: Introducing the Network Navigator Tool and Intervening in Network Analysis Practices in DH
 
 <!-- #region tags=["narrative"] -->
-Since ‘Digital Humanities’ was first coined, debating the question of “what is Digital Humanities (DH)” has become so established that even asking it functions as a meta-discourse. And yet, even though the answers vary widely, many of them often include some reference to “DH tools.” 
+Since ‘Digital Humanities’ was first coined, debating the question of “what is Digital Humanities (DH)” has become so established that even asking it functions as a meta-discourse. And yet, even though the answers vary widely, many of them often include some reference to “DH tools.”
 <!-- #endregion -->
 
 <!-- #region tags=["hermeneutics"] -->
@@ -102,7 +102,7 @@ article_chart_directory_path = "./script/data/charts/" # Where all the article c
 <!-- #region tags=["hermeneutics"] -->
 Then we read in the dataset and count the frequency of the word `tool` in the definitions. As Ted Underwood has argued, word counts, though seemingly very straightforward and even basic, can be a powerful tool for exploring change in language, and deciding how to count requires many interpretative choices that can shape our results.(<cite data-cite="14009734/PNJPRYAP"></cite>) For a more detailed explanation of the methods we used, see our `CountingTools.ipynb` notebook, but primarily we are using a combination of *lowercasing* the textual data for consistency and then *tokenizing* this data, and finally searching for matches in these tokens. This choice is deliberate since our primary focus lies in identifying the frequency of tool names and related terms, such as "network analysis." Our goal is to capture as many instances as possible without being overly permissive and including unrelated words that merely contain these terms.
 
-Furthermore, our choice to utilize word counting and not more complex methods is also intentional, since we are primarily interested in tracing the popularity of tools and network analysis in DH, and less interested in exploring how the language around these terms have changed (something we hope to explore in future work). 
+Furthermore, our choice to utilize word counting and not more complex methods is also intentional, since we are primarily interested in tracing the popularity of tools and network analysis in DH, and less interested in exploring how the language around these terms have changed (something we hope to explore in future work).
 <!-- #endregion -->
 
 ```python tags=["hermeneutics"]
@@ -305,7 +305,7 @@ else:
 ```
 
 <!-- #region tags=["hermeneutics"] -->
-In this graph, we can see that `tool` and `digital tools` are both prominently sized in the word cloud, suggesting that the term tool is used relatively frequently in the definitions of DH. While such word counts and word clouds are not definitive, these methods help suggest that this trend exists and is worth further investigation. 
+In this graph, we can see that `tool` and `digital tools` are both prominently sized in the word cloud, suggesting that the term tool is used relatively frequently in the definitions of DH. While such word counts and word clouds are not definitive, these methods help suggest that this trend exists and is worth further investigation.
 <!-- #endregion -->
 
 <!-- #region tags=["narrative"] -->
@@ -376,10 +376,10 @@ def generate_word_counts(subset_df: pd.DataFrame, text_column: str, terms_list: 
 
     if 'total_tokens' not in subset_df.columns:
         subset_df['total_tokens'] = subset_df['lower_text'].str.split(' ').str.len()
-    
+
     count_df = count_term_frequencies(subset_df, 'lower_text', terms_list)
     combined_df = pd.concat([subset_df, count_df], axis=1)
-    
+
     return combined_df
 
 def process_data(file_path: str, text_column: str, date_column: str, terms_list: List, data_origin: str, title: str, term_type: str, term_mapping: bool, joined_term: Optional[str] = None):
@@ -427,7 +427,7 @@ def process_data(file_path: str, text_column: str, date_column: str, terms_list:
     id_vars_columns = subset_df.columns.tolist()
     melted_combined_df = pd.melt(combined_df, id_vars=id_vars_columns, var_name=term_type, value_name='counts')
     melted_combined_df['scaled_counts'] = melted_combined_df['counts'] / melted_combined_df['total_tokens']
-    
+
     # If term mapping is enabled, map the terms
     if term_mapping:
         # Create a mapping from lowercase tool name to the correct name
@@ -455,7 +455,7 @@ def process_data(file_path: str, text_column: str, date_column: str, terms_list:
     # Rename the 'cleaned_conference_year' column to 'date'
     grouped_df = grouped_df.rename(columns={f"cleaned_{date_column}": "date"})
 
-    # Add a 'data_origin' column 
+    # Add a 'data_origin' column
     grouped_df["data_origin"] = data_origin
 
     # Add a 'title' column
@@ -465,7 +465,7 @@ def process_data(file_path: str, text_column: str, date_column: str, terms_list:
 ```
 
 <!-- #region tags=["hermeneutics"] -->
-Now we can start loading in our datasets and processing them with these functions. For the sake of speed, we have presaved the output of our analysis to be loaded in the charts as json files. However, you can rerun this analysis by setting the rerun variable to True.
+Now we can start loading in our datasets and processing them with these functions. For the sake of speed, we have previously saved the output of our analysis to be loaded in the charts as json files. However, you can rerun this analysis by setting the rerun variable to True.
 <!-- #endregion -->
 
 ```python tags=["hermeneutics"]
@@ -557,27 +557,27 @@ if (os.path.exists(network_tools_over_time_chart_output_path) == False) or (os.p
         term_mapping=True,
         joined_term=None
     )
-   
+
 ```
 
 <!-- #region tags=["hermeneutics"] -->
-Now that we have the datasets processed, we can start looking at trends in network analysis tools over time. 
+Now that we have the datasets processed, we can start looking at trends in network analysis tools over time.
 <!-- #endregion -->
 
 ```python tags=["hermeneutics"]
 # Define colors for each tool to use the same colors across charts
 color_network_map = {
-    'Gephi': '#4c78a8', 
-    'Palladio': '#aec7e8', 
-    'nodegoat': '#ff7f0e', 
-    'igraph': '#ffbb78', 
-    'Textexture': '#2ca02c', 
-    'Netlytic': '#98df8a', 
-    'sigma.js': '#d62728', 
-    'Neo4j': '#ff9896', 
-    'NetworkX': '#9467bd', 
-    'NodeXL': '#c5b0d5', 
-    'Graphviz': '#8c564b', 
+    'Gephi': '#4c78a8',
+    'Palladio': '#aec7e8',
+    'nodegoat': '#ff7f0e',
+    'igraph': '#ffbb78',
+    'Textexture': '#2ca02c',
+    'Netlytic': '#98df8a',
+    'sigma.js': '#d62728',
+    'Neo4j': '#ff9896',
+    'NetworkX': '#9467bd',
+    'NodeXL': '#c5b0d5',
+    'Graphviz': '#8c564b',
     'Cytoscape': '#c49c94'
     }
 ```
@@ -612,11 +612,11 @@ else:
 
     # Create a dropdown selection
     dropdown = alt.binding_select(
-        options=['Raw Frequency of Mentions', 'Frequency of Mentions Scaled by Total Tokens'], 
+        options=['Raw Frequency of Mentions', 'Frequency of Mentions Scaled by Total Tokens'],
         name='Select Counting Method on Y Axis'
     )
     ycol_param = alt.param(
-        value="Raw Frequency of Mentions", 
+        value="Raw Frequency of Mentions",
         bind=dropdown
     )
     # Create a selection that allows the user to select points in the legend
@@ -662,7 +662,7 @@ else:
             title=f"{title}",
             width=width
         )
-        
+
 
         # Add the chart to the list of charts
         charts.append(new_chart)
@@ -718,7 +718,7 @@ else:
     grouped_merged_dh_tools = grouped_merged_dh_tools.rename(columns={"counts": "Raw Frequency of Mentions", "scaled_counts": "Frequency of Mentions Scaled by All Tool Mentions"})
     # Create a dropdown selection
     dropdown = alt.binding_select(
-        options=["Raw Frequency of Mentions",  "Frequency of Mentions Scaled by All Tool Mentions"], 
+        options=["Raw Frequency of Mentions",  "Frequency of Mentions Scaled by All Tool Mentions"],
         name='Select Counting Method on Y Axis'
     )
     xcol_param = alt.param(
@@ -850,7 +850,7 @@ relative_popularity_chart
 ```
 
 <!-- #region tags=["narrative"] -->
-While these figures hint at the surging popularity of these tools (and network analysis more broadly), what is only starting to be studied is how this rise of network analysis in DH has been delimited by what these tools can produce (<cite data-cite="14009734/EGDP6WTJ"></cite>). Consider, for instance, the prevalence of force layout diagrams in DH, colloquially known as the ‘hairball graph.’ Although these diagrams are often criticized for being difficult to interpret in DH, we believe their widespread use is also indicative of the power these “tools” exert on what scholars think is possible with network analysis. Given this influence, we attempted to intervene in these practices by building *Network Navigator*, a browser-based tool for network analysis in DH. 
+While these figures hint at the surging popularity of these tools (and network analysis more broadly), what is only starting to be studied is how this rise of network analysis in DH has been delimited by what these tools can produce (<cite data-cite="14009734/EGDP6WTJ"></cite>). Consider, for instance, the prevalence of force layout diagrams in DH, colloquially known as the ‘hairball graph.’ Although these diagrams are often criticized for being difficult to interpret in DH, we believe their widespread use is also indicative of the power these “tools” exert on what scholars think is possible with network analysis. Given this influence, we attempted to intervene in these practices by building *Network Navigator*, a browser-based tool for network analysis in DH.
 <!-- #endregion -->
 
 <!-- #region tags=["hermeneutics"] -->
@@ -914,7 +914,7 @@ else:
         x=alt.X('commit_author_date:T', title='Date'),
         y=alt.Y('stats_total:Q', title='Total Contributions').stack(None),
         color=alt.Color('commit_author_name:N',
-            scale=alt.Scale(scheme='tableau20'), 
+            scale=alt.Scale(scheme='tableau20'),
             legend=alt.Legend(title="Author"),
             sort=alt.EncodingSortField(
                 field="stats_total",  # The field to use for the sort
@@ -961,7 +961,7 @@ Thus, we hope that by sharing not only our source code, but also our sources of 
 ## Edges: The Origins of Network Navigator and Critical Making of DH Tools
 
 <!-- #region tags=["narrative"] -->
-Today, when a user first navigates to *Network Navigator* at https://networknavigator.jrladd.com/, they encounter a web page divided into sections: a branded header; instructions on the right for how to use the site; a box to paste their data; buttons to customize their network; and lastly links to resources, about, and how-to page. 
+Today, when a user first navigates to *Network Navigator* at https://networknavigator.jrladd.com/, they encounter a web page divided into sections: a branded header; instructions on the right for how to use the site; a box to paste their data; buttons to customize their network; and lastly links to resources, about, and how-to page.
 <!-- #endregion -->
 
 ```python jdh={"module": "object", "object": {"source": ["Current homepage of Network Navigator"], "type": "image"}} tags=["figure-nn-homepage-*", "narrative"]
@@ -977,7 +977,7 @@ display(Image("media/nn_original_homepage.png"))
 ```
 
 <!-- #region tags=["narrative"] -->
-Initially, *Network Navigator*  was simply a table. The imagined user would drag-and-drop network data into the browser and receive in return cleanly-formatted tabular data, detailing some standard network metrics. 
+Initially, *Network Navigator*  was simply a table. The imagined user would drag-and-drop network data into the browser and receive in return cleanly-formatted tabular data, detailing some standard network metrics.
 <!-- #endregion -->
 
 ```python jdh={"module": "object", "object": {"source": ["Original files in the Network Navigator GitHub Repository. First commit on August 8, 2017. Screenshot from https://github.com/jrladd/network_navigator/tree/10ad7fd45831980980d26bdacc2913a2fb1fb23c"], "type": "image"}} tags=["figure-nn-first-commit-repo-*", "narrative"]
@@ -985,7 +985,7 @@ display(Image("media/nn_first_commit_repo.png"))
 ```
 
 <!-- #region tags=["narrative"] -->
-Ladd first created the GitHub repository for *Network Navigator* on August 8, 2017, and his first commit consisted of six files: a homepage through an index HTML file, an initial Javascript file to build networks, an example spreadsheet, and then imports from two libraries: JSNetworkX for the network analysis and the web design framework Bootstrap for styling of the website -- libraries we discuss more in-depth later in this article. The idea for the tool was born from Ladd’s contributions to the *Six Degrees of Francis Bacon* (SDFB) project, which visualized the social networks of early modern England in a crowdsourced web application. The SDFB site included many D3 visualizations for networks, drawing on a range of then-new visualization paradigms for networks in the humanities. However, the scope of that project and its design didn’t allow for some of the more advanced metrics Ladd was using internally for the project at the time, and he saw the possibilities for a web tool that could provide this functionality. Drawing from these experiences, Ladd built the first prototype of *Network Navigator* over the remainder of 2017, and while initially hosted via Ladd’s website and GitHub pages, in 2018, with assistance from Dan Evans, the tool was hosted by Carnegie Mellon University Libraries’ servers. 
+Ladd first created the GitHub repository for *Network Navigator* on August 8, 2017, and his first commit consisted of six files: a homepage through an index HTML file, an initial Javascript file to build networks, an example spreadsheet, and then imports from two libraries: JSNetworkX for the network analysis and the web design framework Bootstrap for styling of the website -- libraries we discuss more in-depth later in this article. The idea for the tool was born from Ladd’s contributions to the *Six Degrees of Francis Bacon* (SDFB) project, which visualized the social networks of early modern England in a crowdsourced web application. The SDFB site included many D3 visualizations for networks, drawing on a range of then-new visualization paradigms for networks in the humanities. However, the scope of that project and its design didn’t allow for some of the more advanced metrics Ladd was using internally for the project at the time, and he saw the possibilities for a web tool that could provide this functionality. Drawing from these experiences, Ladd built the first prototype of *Network Navigator* over the remainder of 2017, and while initially hosted via Ladd’s website and GitHub pages, in 2018, with assistance from Dan Evans, the tool was hosted by Carnegie Mellon University Libraries’ servers.
 <!-- #endregion -->
 
 <!-- #region tags=["hermeneutics"] -->
@@ -993,11 +993,11 @@ Evans was succeeded in his role by Matt Lincoln, who contributed some fixes and 
 <!-- #endregion -->
 
 <!-- #region tags=["narrative"] -->
-Beyond his experience on SDFB, one of the initial motivating factors for Ladd in creating *Network Navigator* was the desire to foreground network metrics, in response to humanists’ increasing interest in networks. This shift was also due to the emergence of Cultural Analytics and data science, where researchers were exploring the potential for networks not just as visualizations or databases but also applying network statistics and graph theory to study culture. At the time, only *Gephi* had these types of metrics–*Palladio* and other network analysis tools had none–and the metrics in *Gephi* were presented in a way that was often overwhelming to novices. With a few clicks, users in *Gephi* could generate an enormous amount of statistical inferences about their networks, but these buttons included few explanations of how to interpret or understand these metrics. While scholars like Ben Schmidt have argued that humanists do not need to necessarily understand these algorithms, Ladd felt that similar to Rebecca Koeser’s assessment on the dangers of trusting others to do the math, tools like *Gephi* unintentionally made it difficult for humanists to understand the principles of network analysis, at times resulting in an over-interpretation of the visual features of graph layouts rather than engagement with network statistics (<cite data-cite="14009734/IGWQ4G4A"></cite>,<cite data-cite="14009734/F4CEZB5A"></cite>). Therefore, *Network Navigator* initially combined a handful of the most popular introductory metrics in an interface that would help users learn how these metrics could inform their research questions, with the goal of helping the field move beyond networks as only a critical visualization practice towards what networks could tell us statistically and computationally. 
+Beyond his experience on SDFB, one of the initial motivating factors for Ladd in creating *Network Navigator* was the desire to foreground network metrics, in response to humanists’ increasing interest in networks. This shift was also due to the emergence of Cultural Analytics and data science, where researchers were exploring the potential for networks not just as visualizations or databases but also applying network statistics and graph theory to study culture. At the time, only *Gephi* had these types of metrics–*Palladio* and other network analysis tools had none–and the metrics in *Gephi* were presented in a way that was often overwhelming to novices. With a few clicks, users in *Gephi* could generate an enormous amount of statistical inferences about their networks, but these buttons included few explanations of how to interpret or understand these metrics. While scholars like Ben Schmidt have argued that humanists do not need to necessarily understand these algorithms, Ladd felt that similar to Rebecca Koeser’s assessment on the dangers of trusting others to do the math, tools like *Gephi* unintentionally made it difficult for humanists to understand the principles of network analysis, at times resulting in an over-interpretation of the visual features of graph layouts rather than engagement with network statistics (<cite data-cite="14009734/IGWQ4G4A"></cite>,<cite data-cite="14009734/F4CEZB5A"></cite>). Therefore, *Network Navigator* initially combined a handful of the most popular introductory metrics in an interface that would help users learn how these metrics could inform their research questions, with the goal of helping the field move beyond networks as only a critical visualization practice towards what networks could tell us statistically and computationally.
 <!-- #endregion -->
 
 <!-- #region tags=["narrative"] -->
-This core ethos has remained central to Network Navigator even as it was rebuilt by Ladd and LeBlanc, but before detailing their process, it is crucial to situate the tool within the longer history of DH tools and what Leigh Star and Karen Ruhleder termed an “ecology of infrastructure” (<cite data-cite="14009734/WTEEPNWM"></cite>). Infrastructure, though a vast and sometimes nebulous concept—as anthropologist Brian Larkin notes, it can be “conceptually unruly”—is pivotal in understanding that digital tools transcend mere outputs (<cite data-cite="14009734/B5F8YD4W"></cite>, 329). Such an approach to studying these tools is in line with the recent rise of Critical Infrastructure Studies in DH, which seeks to bridge fields like Science and Technology Studies (STS) and Library and Information Sciences (LIS) with how we study the underlying systems and structures that support and shape DH research, tools, and methodologies. How Network Navigator constitutes infrastructure then is partially a question of its relation to both users and other existing network tools, which we explore later in this article. But it is also a helpful framework to contextualize the choices that shaped this tool within the longer trends and debates over DH tools, as Yrjö Engeström has argued, when studying a tool, we need to ask “when is a tool”, rather than what is a tool”: in essence, not only exploring its functionality, but also its histories (<cite data-cite="14009734/CF4Y7LDL"></cite>). 
+This core ethos has remained central to Network Navigator even as it was rebuilt by Ladd and LeBlanc, but before detailing their process, it is crucial to situate the tool within the longer history of DH tools and what Leigh Star and Karen Ruhleder termed an “ecology of infrastructure” (<cite data-cite="14009734/WTEEPNWM"></cite>). Infrastructure, though a vast and sometimes nebulous concept—as anthropologist Brian Larkin notes, it can be “conceptually unruly”—is pivotal in understanding that digital tools transcend mere outputs (<cite data-cite="14009734/B5F8YD4W"></cite>, 329). Such an approach to studying these tools is in line with the recent rise of Critical Infrastructure Studies in DH, which seeks to bridge fields like Science and Technology Studies (STS) and Library and Information Sciences (LIS) with how we study the underlying systems and structures that support and shape DH research, tools, and methodologies. How Network Navigator constitutes infrastructure then is partially a question of its relation to both users and other existing network tools, which we explore later in this article. But it is also a helpful framework to contextualize the choices that shaped this tool within the longer trends and debates over DH tools, as Yrjö Engeström has argued, when studying a tool, we need to ask “when is a tool”, rather than what is a tool”: in essence, not only exploring its functionality, but also its histories (<cite data-cite="14009734/CF4Y7LDL"></cite>).
 <!-- #endregion -->
 
 <!-- #region tags=["hermeneutics"] -->
@@ -1119,7 +1119,7 @@ else:
 
 
     dropdown = alt.binding_select(
-        options=['Raw Frequency of Mentions', 'Frequency of Mentions Scaled by Total Tokens'], 
+        options=['Raw Frequency of Mentions', 'Frequency of Mentions Scaled by Total Tokens'],
         name='Select Counting Method on Y Axis'
     )
     ycol_param = alt.param(
@@ -1188,7 +1188,7 @@ infrastructure_tool_chart
 ```
 
 <!-- #region tags=["hermeneutics"] -->
-These charts show that whether using raw frequencies or scaling by length of articles over time, both tools and infrastructure have become increasingly popular in DH. You can also select each publication in the legend to see these trends more clearly. 
+These charts show that whether using raw frequencies or scaling by length of articles over time, both tools and infrastructure have become increasingly popular in DH. You can also select each publication in the legend to see these trends more clearly.
 
 While this is not surprising, it does suggest that these terms are worth further investigation, especially since they are often used in DH without being defined or even interrogated. Indeed, while tool has been present from the outset of DH writing (though increasingly prevalent since 2005), infrastructure seems to be a more recent discourse, only emerging around 2000 and then becoming very popular; a finding we hope to explore more in-depth in the future.
 <!-- #endregion -->
@@ -1198,7 +1198,7 @@ While histories of DH have started to proliferate, there remain few that foregro
 <!-- #endregion -->
 
 <!-- #region tags=["narrative"] -->
-However, *Gephi* itself was not initially conceived of or built as primarily a tool for digital humanities research. According to Clément Levallois, the idea for *Gephi* was first developed in 2006 by Mathieu Jacomy, as part of his work with the e-Diasporas Atlas project and, and by Eytan Adar, as part of his work on GUESS, the Graph Exploration System Software (<cite data-cite="14009734/K5C75JVX"></cite>). Together with researchers from Université Technologique de Compiègne, the team worked on developing the initial version of *Gephi*, releasing it for download on September 8, 2008, and then making the software public on GitHub on March 2, 2009. Part of the impetus for *Gephi*, according to one of the developers Sebastien Heymann, was that “other network visualization software is either a poor visualization module or a stunning aspect but not efficient.” For example, one of the earliest network analysis tools, Pajek, first released in 1997, would only let you visualize a few hundred nodes, and GUESS, released in 2007, could only display up to 2000 nodes. Thus, the creators of *Gephi* initially focused on leveraging new graphical technologies like GPUs to render much larger networks; the initial release could do up to 50000 nodes (<cite data-cite="14009734/DGNAHYY3"></cite>). But the very existence of this software was also indicative of the massive growth of network science as a field during this period. As the authors of The Network Turn have argued, the 1998 publication “Collective Dynamics of Small World Networks” by Duncan J. Watts and Steven Strogatz and the 1999 publication “Emergence of Scaling in Random Networks” by Albert-László Barabási and Réka Albert “ushered in the field of network science,” in many ways parallel to the coterminous growth of digital humanities (<cite data-cite="14009734/6G36YAJC"></cite>, 21). And yet, much of this initial debate over DH tools was focused almost exclusively on tools for working with digitized texts (whether editing and annotating or analyzing them). 
+However, *Gephi* itself was not initially conceived of or built as primarily a tool for digital humanities research. According to Clément Levallois, the idea for *Gephi* was first developed in 2006 by Mathieu Jacomy, as part of his work with the e-Diasporas Atlas project and, and by Eytan Adar, as part of his work on GUESS, the Graph Exploration System Software (<cite data-cite="14009734/K5C75JVX"></cite>). Together with researchers from Université Technologique de Compiègne, the team worked on developing the initial version of *Gephi*, releasing it for download on September 8, 2008, and then making the software public on GitHub on March 2, 2009. Part of the impetus for *Gephi*, according to one of the developers Sebastien Heymann, was that “other network visualization software is either a poor visualization module or a stunning aspect but not efficient.” For example, one of the earliest network analysis tools, Pajek, first released in 1997, would only let you visualize a few hundred nodes, and GUESS, released in 2007, could only display up to 2000 nodes. Thus, the creators of *Gephi* initially focused on leveraging new graphical technologies like GPUs to render much larger networks; the initial release could do up to 50000 nodes (<cite data-cite="14009734/DGNAHYY3"></cite>). But the very existence of this software was also indicative of the massive growth of network science as a field during this period. As the authors of The Network Turn have argued, the 1998 publication “Collective Dynamics of Small World Networks” by Duncan J. Watts and Steven Strogatz and the 1999 publication “Emergence of Scaling in Random Networks” by Albert-László Barabási and Réka Albert “ushered in the field of network science,” in many ways parallel to the coterminous growth of digital humanities (<cite data-cite="14009734/6G36YAJC"></cite>, 21). And yet, much of this initial debate over DH tools was focused almost exclusively on tools for working with digitized texts (whether editing and annotating or analyzing them).
 <!-- #endregion -->
 
 <!-- #region tags=["hermeneutics"] -->
@@ -1265,7 +1265,7 @@ else:
 
 
     dropdown = alt.binding_select(
-        options=['Raw Frequency of Mentions', 'Frequency of Mentions Scaled by Total Tokens'], 
+        options=['Raw Frequency of Mentions', 'Frequency of Mentions Scaled by Total Tokens'],
         name='Select Counting Method on Y Axis'
     )
     ycol_param = alt.param(
@@ -1336,7 +1336,7 @@ network_analysis_chart
 <!-- #region tags=["hermeneutics"] -->
 Similar to our graph above, these charts visualize how networks and network analysis have increasingly become popular in DH, even when scaled by the length of articles. You can also select each publication in the legend to see these trends more clearly. While there seems to be a post-2020 decline, this decrease is likely an artefact of the pandemic given the rebound in 2022 (2023 data was not complete at the time of writing).
 
-Also of note is that while networks, like tools, have been present in DH writing since the beginning, network analysis is a more recent phenomenon, only emerging in the mid-2000s and then becoming increasingly popular. This trend seems to correspond with the growing popularity of network analysis tools, like *Gephi*, which we explored in the introduction. 
+Also of note is that while networks, like tools, have been present in DH writing since the beginning, network analysis is a more recent phenomenon, only emerging in the mid-2000s and then becoming increasingly popular. This trend seems to correspond with the growing popularity of network analysis tools, like *Gephi*, which we explored in the introduction.
 <!-- #endregion -->
 
 <!-- #region tags=["narrative"] -->
@@ -1421,7 +1421,7 @@ else:
 
 
     dropdown = alt.binding_select(
-        options=['Raw Frequency of Mentions', 'Frequency of Mentions Scaled by Total Tokens'], 
+        options=['Raw Frequency of Mentions', 'Frequency of Mentions Scaled by Total Tokens'],
         name='Select Counting Method on Y Axis'
     )
     ycol_param = alt.param(
@@ -1531,7 +1531,7 @@ For more on our adoption of Tachyons, see <https://github.com/jrladd/network_nav
 <!-- #region tags=["narrative"] -->
 While the roads not taken with *Network Navigator* may be difficult to discern for users, we have attempted to build an interface for *Network Navigator* that intentionally makes users aware of itself as a structuring argument (in Drucker and Svensson’s sense). Specifically, the interface design is meant to guide the user to greater understanding of the capabilities of network analysis as a whole but also the intentional limitation of *Network Navigator* as a tool. Our emphasis on limitations may seem like a rationale, or dare we say even an excuse, for not building more functionality, but as stated previously, from the outset *Network Navigator* was designed to be more limited than a tool like *Gephi* since we see it as one part of a broader ecosystem. Therefore, the interface was crafted to encourage users to confront these limitations, which we believe helps them better understand what tools, libraries, and platforms for network analysis that they want to use next. For us then, assessing the usability of *Network Navigator* required thinking as much about what we wanted to omit or obscure from *Network Navigator* versus what we wanted to enable with this tool.
 
-A central way in which *Network Navigator* calls attention to the many possibilities of network analysis is through its prominent presentation of a selected set of network metrics. Shortly before *Network Navigator* was first designed, the team members of *Six Degrees of Francis Bacon* created a tutorial for *The Programming Historian* that outlined how to calculate standard network metrics in Python (<cite data-cite="962389/BP37DLUU"></cite>). The metrics included density, average shortest path length, diameter, and transitivity to measure the whole network, and degree, betweenness centrality, and eigenvector centrality to measure individual nodes. These metrics were chosen because they were already in regular use by the project team, and because the team noted these same metrics frequently occurring in other humanities network projects. 
+A central way in which *Network Navigator* calls attention to the many possibilities of network analysis is through its prominent presentation of a selected set of network metrics. Shortly before *Network Navigator* was first designed, the team members of *Six Degrees of Francis Bacon* created a tutorial for *The Programming Historian* that outlined how to calculate standard network metrics in Python (<cite data-cite="962389/BP37DLUU"></cite>). The metrics included density, average shortest path length, diameter, and transitivity to measure the whole network, and degree, betweenness centrality, and eigenvector centrality to measure individual nodes. These metrics were chosen because they were already in regular use by the project team, and because the team noted these same metrics frequently occurring in other humanities network projects.
 
 When first working with network data, humanities scholars are typically interested in two things: the importance of individual nodes and the overall network structure. Local metrics such as degree, betweenness, and eigenvector centrality are essential metrics for understanding a node’s importance. How central is a particular node in the network? Is a specific individual a hub (someone with a lot of connections) or a broker (someone who stands between several groups)? Global metrics such as density, average shortest path length, diameter, and transitivity all give a sense of the overall size and shape of a network. Is the community close-knit or spread out? Would information travel through the network quickly or slowly? The addition of these global metrics was the very first improvement to the site, made in its second commit on the next day, Aug. 9th. Below is a brief demonstration of how to calculate these metrics in Python, and the code outputs a table in a nearly identical way to the first version of *Network Navigator*.
 <!-- #endregion -->
@@ -1574,7 +1574,7 @@ nodes.sort_values("degree_centrality", ascending=False)
 ```
 
 <!-- #region tags=["narrative"] -->
-The code above reflects the current approach that *Network Navigator* takes to calculating metrics. The site uses JSNetworkX, a JavaScript library that ports many features of NetworkX, a Python library for network analysis first built by Aric Hagberg, Dan Schult, and Pieter Swart and released in 2005, that has since become one of the main coding libraries for working networks (<cite data-cite="14009734/SK4RM6KG"></cite>). JSNetworkX was built by Felix Kling from 2012 to 2015, and though Kling is no longer maintaining the project, we still decided to use his code for a few reasons. First, though network analysis is a very popular computational methodology, most projects use programming languages like Python or R to compute network metrics, rather than doing so in the browser. Consequently, there remain few alternatives to JSNetworkX for computing these calculations for projects that do not have any backend databases like ours. To limit the potential issues of using unmaintained code, we copied the minified version of JSNetworkX library, and loaded it directly from our project, rather than relying on a Content Delivery Network (CDN) version (which is how most web applications utilize external code libraries). Our second reason for utilizing JSNetworkX is primarily pedagogical. We believe keeping the network functionality consistent across programming languages and DH tools is crucial for enabling both users experienced with network analysis to quickly understand the tool’s functionality (for example, instructors in a DH course) and for helping those new to network analysis to learn about these methods in a way that is transferable (for example, should they decide to eventually learn Python and NetworkX) and consistent with scholarly practices, since the algorithms in NetworkX are widely used in DH and computational research. 
+The code above reflects the current approach that *Network Navigator* takes to calculating metrics. The site uses JSNetworkX, a JavaScript library that ports many features of NetworkX, a Python library for network analysis first built by Aric Hagberg, Dan Schult, and Pieter Swart and released in 2005, that has since become one of the main coding libraries for working networks (<cite data-cite="14009734/SK4RM6KG"></cite>). JSNetworkX was built by Felix Kling from 2012 to 2015, and though Kling is no longer maintaining the project, we still decided to use his code for a few reasons. First, though network analysis is a very popular computational methodology, most projects use programming languages like Python or R to compute network metrics, rather than doing so in the browser. Consequently, there remain few alternatives to JSNetworkX for computing these calculations for projects that do not have any backend databases like ours. To limit the potential issues of using unmaintained code, we copied the minified version of JSNetworkX library, and loaded it directly from our project, rather than relying on a Content Delivery Network (CDN) version (which is how most web applications utilize external code libraries). Our second reason for utilizing JSNetworkX is primarily pedagogical. We believe keeping the network functionality consistent across programming languages and DH tools is crucial for enabling both users experienced with network analysis to quickly understand the tool’s functionality (for example, instructors in a DH course) and for helping those new to network analysis to learn about these methods in a way that is transferable (for example, should they decide to eventually learn Python and NetworkX) and consistent with scholarly practices, since the algorithms in NetworkX are widely used in DH and computational research.
 <!-- #endregion -->
 
 <!-- #region tags=["hermeneutics"] -->
@@ -1592,7 +1592,7 @@ display(Image("media/nn_first_commit.png"))
 <!-- #region tags=["narrative"] -->
 Early in the redesign, this sortable Bootstrap table was replaced with the DataTables library to enable easier search, sorting, and especially export. With this change users could explore these metrics outside of the tool, adding their own custom visualizations and pursuing new research questions as needed. Making it easy to get data both in and out of the tool was a central principle of the redesign. Since this wouldn’t be a single-tool approach to network analysis, we wanted users to be able to easily move output from one tool to another. DataTables also enabled a similar logic internally: we were able to create visualizations that would respond to users interacting with the table. If a user searched or filtered the table, the visualization would be filtered accordingly, reinforcing that visualization and metrics exist in conversation with one another. During the *Network Analysis+Digital Art History* workshop in Summer 2019, just one week after Ladd and LeBlanc first discussed redesigning *Network Navigator*, members of the *Palladio* team saw the 1.0 version of *Network Navigator* and proposed that the tool’s metrics be incorporated inside *Palladio*. While working on the *Network Navigator* redesign, Ladd helped adapt the *Palladio* code to include a metrics panel, still available in that tool today. To say that *Network Navigator* is part of a community of network tools is more than metaphoric, since parts of it are now literally embedded in other humanities network tools.
 
-The partnership with *Palladio* throws another portion of the redesign process into relief: our choice not to create functionality for bipartite networks, or networks with more than one type of node. Bipartite network functionality is mentioned in that first feature wishlist screenshotted above: bipartite networks are very common in arts and humanities research, as these areas often deal with connections between people and artistic or historical objects (and thus two distinct node types). As the authors of *The Network Turn*  point out, creating network data from humanities sources is not always straightforward, but modeling relationships as multipartite networks can be a useful way to proceed (<cite data-cite="14009734/6G36YAJC"></cite>). Because it is built for different kinds of humanities data, *Palladio* also allows users to visualize bipartite networks through prompting the user to select two different columns of data to link (though their actual network graph does not easily distinguish bipartite nodes whether through color or placement). While this choice makes perfect sense for *Palladio*, it was an ongoing question whether bipartite networks suited the pedagogical aims of *Network Navigator*. For the redesign, we had initially hoped to introduce users first to the simplest kinds of unipartite networks and increase complexity from there through including some bipartite functionality. However, we quickly realized that enabling bipartite networks would require an in-depth reworking of almost every part of the tool, and some of our libraries, including JSNetworkX, had not yet included bipartite network metric into their APIs. While we could allow users to visualize bipartite networks, without the ability to run algorithms for bipartite networks, any metrics we would present would ultimately be statistically misleading. 
+The partnership with *Palladio* throws another portion of the redesign process into relief: our choice not to create functionality for bipartite networks, or networks with more than one type of node. Bipartite network functionality is mentioned in that first feature wishlist screenshotted above: bipartite networks are very common in arts and humanities research, as these areas often deal with connections between people and artistic or historical objects (and thus two distinct node types). As the authors of *The Network Turn*  point out, creating network data from humanities sources is not always straightforward, but modeling relationships as multipartite networks can be a useful way to proceed (<cite data-cite="14009734/6G36YAJC"></cite>). Because it is built for different kinds of humanities data, *Palladio* also allows users to visualize bipartite networks through prompting the user to select two different columns of data to link (though their actual network graph does not easily distinguish bipartite nodes whether through color or placement). While this choice makes perfect sense for *Palladio*, it was an ongoing question whether bipartite networks suited the pedagogical aims of *Network Navigator*. For the redesign, we had initially hoped to introduce users first to the simplest kinds of unipartite networks and increase complexity from there through including some bipartite functionality. However, we quickly realized that enabling bipartite networks would require an in-depth reworking of almost every part of the tool, and some of our libraries, including JSNetworkX, had not yet included bipartite network metric into their APIs. While we could allow users to visualize bipartite networks, without the ability to run algorithms for bipartite networks, any metrics we would present would ultimately be statistically misleading.
 
 Thus, we decided not to include bipartite networks for three distinct reasons. First, bipartite options might distract or confuse the very researchers that were hoping to welcome into the field of network analysis, especially deciding how to represent a bipartite network as a unipartite one is an important choice that should be informed by the particular research question. Second, the tools and libraries we were working with were not yet ready to be used for bipartite networks, and given our time constraints as researchers and not full-time developers, we were hesitant to create custom Javascript libraries for bipartite networks that would require significant maintenance. And our third and final reason was that other tools, especially *Palladio*, were already providing researchers with a useful interface to visualize bipartite networks, allowing them to select `source` and `target` nodes, and we did not want to enable visualizations that would not correspond to our metrics. Indeed, many existing network analysis tools allow users to important bipartite graphs and run network analysis algorithms, but do not explain in-depth how these algorithms presume unipartite structures, leading to either confusion or misinterpretation of these metrics. We have come to recognize this decision as a pivotal one for the project, and it has illustrated for us the importance of focus and the careful consideration of what not to do. This decision was confirmed when, since building *Network Navigator*, other useful tools for creating unipartite networks from bipartite networks like *Table2Net* have emerged and joined the community of humanities network analysis applications (<cite data-cite="14009734/EBW9XV83"></cite>) .
 
