@@ -227,6 +227,7 @@ Total number of audios: 1
 - figure-nn-october-meeting-*
 - figure-select-viz-*
 - figure-attribute-filter-*
+> Make sure to fill this template document [license_to_publish_JDH.dotx](https://github.com/C2DH/journal-of-digital-history-ipynb-preflight-action/blob/master/license_to_publish_JDH.dotx) and send it to jdh.admin@uni.lu
 
 
 ### Check URLs
@@ -308,8 +309,4 @@ Invalid URL (Other - 302): https://github.com/jrladd/network_navigator/pull/7>.
 -  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=65)
 -  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=72)
 -  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=82)
-### Check JavaScript (plotly)
-**require.undef("plotly")** is missing
-
-**\* plotly.js** is missing
 
