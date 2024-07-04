@@ -57,7 +57,7 @@ This article will explore the role of network analysis research tools as/in scho
 Since ‘Digital Humanities’ was first coined, debating the question of “what is Digital Humanities (DH)” has become so established that even asking it functions as a meta-discourse. And yet, even though the answers vary widely, many of them often include some reference to “DH tools.”
 <!-- #endregion -->
 
-<!-- #region tags=["hermeneutics"] -->
+<!-- #region tags=["narrative"] -->
 To start to explore how tools have become so central in DH, this article utilizes a number of datasets, the first of which is Jason Heppler's dataset from `whatisdigitalhumanities.com`, accessed via https://github.com/hepplerj/whatisdigitalhumanities. This dataset contains quotations from the Day of DH between 2009-2014 and the database contains 817 rows. We used this dataset to explore how frequently the term tool is used in these definitions of DH.
 <!-- #endregion -->
 
@@ -99,7 +99,7 @@ article_data_directory_path = "./script/data/csvs/" # Where all the article data
 article_chart_directory_path = "./script/data/charts/" # Where all the article charts are stored
 ```
 
-<!-- #region tags=["hermeneutics"] -->
+<!-- #region tags=["narrative"] -->
 Then we read in the dataset and count the frequency of the word `tool` in the definitions. As Ted Underwood has argued, word counts, though seemingly very straightforward and even basic, can be a powerful tool for exploring change in language, and deciding how to count requires many interpretative choices that can shape our results.(<cite data-cite="14009734/PNJPRYAP"></cite>) For a more detailed explanation of the methods we used, see our `CountingTools.ipynb` notebook, but primarily we are using a combination of *lowercasing* the textual data for consistency and then *tokenizing* this data, and finally searching for matches in these tokens. This choice is deliberate since our primary focus lies in identifying the frequency of tool names and related terms, such as "network analysis." Our goal is to capture as many instances as possible without being overly permissive and including unrelated words that merely contain these terms.
 
 Furthermore, our choice to utilize word counting and not more complex methods is also intentional, since we are primarily interested in tracing the popularity of tools and network analysis in DH, and less interested in exploring how the language around these terms have changed (something we hope to explore in future work).
@@ -172,7 +172,7 @@ else:
     whatisdh_quotes_df.to_csv(output_csv_path, index=False)
 ```
 
-<!-- #region tags=["hermeneutics"] -->
+<!-- #region tags=["narrative"] -->
 Finally, we visualize the results both over time and by correlation to the total number of words in each definition.
 <!-- #endregion -->
 
@@ -264,7 +264,7 @@ else:
 whatisdh_chart
 ```
 
-<!-- #region tags=["hermeneutics"] -->
+<!-- #region tags=["narrative"] -->
 The first graph shows that the term tool is used more frequently in the definitions of DH over time, and the second graph shows that this frequency has a positive correlation as quotes get longer over time. This suggests that the term tool is becoming more central to the definition of DH, even as definitions of DH become more verbose.
 
 In addition to frequency, we can also look at the words themselves though generating a word cloud. Though word clouds are not statistically rigorous, seeing the term "tool" so prominently displayed in the word cloud suggests that the term is indeed central to the definitions of DH.
@@ -304,7 +304,7 @@ else:
     display(Image(wordcloud_path))
 ```
 
-<!-- #region tags=["hermeneutics"] -->
+<!-- #region tags=["narrative"] -->
 In this graph, we can see that `tool` and `digital tools` are both prominently sized in the word cloud, suggesting that the term tool is used relatively frequently in the definitions of DH. While such word counts and word clouds are not definitive, these methods help suggest that this trend exists and is worth further investigation.
 <!-- #endregion -->
 
@@ -312,7 +312,7 @@ In this graph, we can see that `tool` and `digital tools` are both prominently s
 While the exact tools referenced have changed over time, increasingly many of those most consistently used and cited have been tools intended for network analysis.  
 <!-- #endregion -->
 
-<!-- #region tags=["hermeneutics"] -->
+<!-- #region tags=["narrative"] -->
 In addition to looking at the popularity of `tool`, we can also explore the popularity of tools specifically for network analysis in DH. To do this, we identified a list of tools for network analysis in DH, based partially on our own experiences and through the list available on the Text Analysis Portal for Research (TAPoR) at http://tapor.ca/tools/category/Network%20Analysis. We did not include tools that are primarily for data visualization and might have the ability to visualize networks, but are not specifically for network analysis (such as Tableau, RAWGraphs, Voyant Tools, D3.js, etc.) in our list of network analysis-specific tools.
 <!-- #endregion -->
 
@@ -475,7 +475,7 @@ relative_popularity_chart_output_path = f"{article_chart_directory_path}relative
 rerun_chart_code = False # Set to True to rerun the code to generate the charts
 ```
 
-<!-- #region tags=["hermeneutics"] -->
+<!-- #region tags=["narrative"] -->
 Our first dataset was downloaded from Barbot, Laure, Frank Fischer, Yoann Moranville, and Ivan Pozdniakov. “Which DH Tools Are Actually Used in Research?,” December 6, 2019. https://weltliteratur.net/dh-tools-used-in-research/, which scraped a list of tools from TaPoR and compared them to the proceedings of DH2015 to DH2019.
 <!-- #endregion -->
 
@@ -519,7 +519,7 @@ if (os.path.exists(network_tools_over_time_chart_output_path) == False) or (os.p
     subset_tapor_adho_df['scaled_counts'] = subset_tapor_adho_df['counts'] / subset_tapor_adho_df['total_tokens'] * 100
 ```
 
-<!-- #region tags=["hermeneutics"] -->
+<!-- #region tags=["narrative"] -->
 Next we have Weingart, S.B., Eichmann-Kalwara, N., Lincoln, M., et al. 'DH Conferences Data Extract' in *The Index of Digital Humanities Conferences*. Carnegie Mellon University, 2020. Data last updated 2023-09-20. https://dh-abstracts.library.cmu.edu. https://doi.org/10.34666/k1de-j489, which we downloaded from https://dh-abstracts.library.virginia.edu/downloads. Technically this data somewhat overlaps with the previous dataset, but this one covers a larger time period and includes more conferences, so we have included both to enable the most comprehensive analysis and to allow comparison between the two since they were compiled using differing mechanisms.
 <!-- #endregion -->
 
@@ -539,7 +539,7 @@ if (os.path.exists(network_tools_over_time_chart_output_path) == False) or (os.p
     )
 ```
 
-<!-- #region tags=["hermeneutics"] -->
+<!-- #region tags=["narrative"] -->
 The final dataset is the entire run of *Digital Humanities Quarterly* (DHQ). This dataset comes from the DHQ website (https://digitalhumanities.org/dhq/), and the data was scraped and compiled from XML files available here https://github.com/Digital-Humanities-Quarterly/dhq-journal/tree/main/data/dhq-xml. All the code and data is available in this GitHub repository https://github.com/ZoeLeBlanc/dhq_scraper.
 <!-- #endregion -->
 
@@ -560,7 +560,7 @@ if (os.path.exists(network_tools_over_time_chart_output_path) == False) or (os.p
 
 ```
 
-<!-- #region tags=["hermeneutics"] -->
+<!-- #region tags=["narrative"] -->
 Now that we have the datasets processed, we can start looking at trends in network analysis tools over time.
 <!-- #endregion -->
 
@@ -688,7 +688,7 @@ else:
 network_tools_over_time_chart
 ```
 
-<!-- #region tags=["hermeneutics"] -->
+<!-- #region tags=["narrative"] -->
 We can also consider the relative popularity of network analysis tools compared to other most popular tools in DH, using the list from TAPoR.
 <!-- #endregion -->
 
@@ -1000,7 +1000,7 @@ Beyond his experience on SDFB, one of the initial motivating factors for Ladd in
 This core ethos has remained central to Network Navigator even as it was rebuilt by Ladd and LeBlanc, but before detailing their process, it is crucial to situate the tool within the longer history of DH tools and what Leigh Star and Karen Ruhleder termed an “ecology of infrastructure” (<cite data-cite="14009734/WTEEPNWM"></cite>). Infrastructure, though a vast and sometimes nebulous concept—as anthropologist Brian Larkin notes, it can be “conceptually unruly”—is pivotal in understanding that digital tools transcend mere outputs (<cite data-cite="14009734/B5F8YD4W"></cite>, 329). Such an approach to studying these tools is in line with the recent rise of Critical Infrastructure Studies in DH, which seeks to bridge fields like Science and Technology Studies (STS) and Library and Information Sciences (LIS) with how we study the underlying systems and structures that support and shape DH research, tools, and methodologies. How Network Navigator constitutes infrastructure then is partially a question of its relation to both users and other existing network tools, which we explore later in this article. But it is also a helpful framework to contextualize the choices that shaped this tool within the longer trends and debates over DH tools, as Yrjö Engeström has argued, when studying a tool, we need to ask “when is a tool”, rather than what is a tool”: in essence, not only exploring its functionality, but also its histories (<cite data-cite="14009734/CF4Y7LDL"></cite>).
 <!-- #endregion -->
 
-<!-- #region tags=["hermeneutics"] -->
+<!-- #region tags=["narrative"] -->
 To help understand the growing interest in DH tools and infrastructure, we can also explore these terms in DH academic writing. This approach is far from perfect, but can offer a helpful additional line of evidence to scholarly analysis for how these terms and the ideas they represent have evolved in DH. Using DH journals and other academic writings is an increasingly popular approach to study trends in the field, such as studies of the term theory in DH journals (<cite data-cite="14009734/KXLE6DED"></cite>) or using DH journal articles to situate it across disciplines (<cite data-cite="14009734/C9WX777B"></cite>).
 
 To do this, we use the DH Conference Abstracts dataset from the *Index of DH Conferences*, the articles in *Digital Humanities Quarterly*, as well as data from DH journals that are available in the JSTOR Constellate platform, specifically *Computers and the Humanities* and *Languague Resources and Evaluation*. The choice of these journals is partially driven by what's available, but is also informed by growing research into which journals most represent DH (<cite data-cite="14009734/CHCRP8EM"></cite>, <cite data-cite="14009734/MCSISMHQ"></cite>).
@@ -1187,7 +1187,7 @@ else:
 infrastructure_tool_chart
 ```
 
-<!-- #region tags=["hermeneutics"] -->
+<!-- #region tags=["narrative"] -->
 These charts show that whether using raw frequencies or scaling by length of articles over time, both tools and infrastructure have become increasingly popular in DH. You can also select each publication in the legend to see these trends more clearly.
 
 While this is not surprising, it does suggest that these terms are worth further investigation, especially since they are often used in DH without being defined or even interrogated. Indeed, while tool has been present from the outset of DH writing (though increasingly prevalent since 2005), infrastructure seems to be a more recent discourse, only emerging around 2000 and then becoming very popular; a finding we hope to explore more in-depth in the future.
@@ -1333,7 +1333,7 @@ else:
 network_analysis_chart
 ```
 
-<!-- #region tags=["hermeneutics"] -->
+<!-- #region tags=["narrative"] -->
 Similar to our graph above, these charts visualize how networks and network analysis have increasingly become popular in DH, even when scaled by the length of articles. You can also select each publication in the legend to see these trends more clearly. While there seems to be a post-2020 decline, this decrease is likely an artefact of the pandemic given the rebound in 2022 (2023 data was not complete at the time of writing).
 
 Also of note is that while networks, like tools, have been present in DH writing since the beginning, network analysis is a more recent phenomenon, only emerging in the mid-2000s and then becoming increasingly popular. This trend seems to correspond with the growing popularity of network analysis tools, like *Gephi*, which we explored in the introduction.
@@ -1489,7 +1489,7 @@ else:
 tool_algo_criticism_chart
 ```
 
-<!-- #region tags=["hermeneutics"] -->
+<!-- #region tags=["narrative"] -->
 Our results in these charts emphasize the relative novelty of tool and algorithmic criticism, but also the growing popularity of these terms in DH. You can also select each publication in the legend to see these trends more clearly.
 <!-- #endregion -->
 
