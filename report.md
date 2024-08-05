@@ -3,19 +3,19 @@
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ## Cell Counts   
-**all cells: 111**  
+**all cells: 150**  
 code_empty: 0   
-markdown: 69   
+markdown: 108   
 code: 42   
 
 ## Action Outputs
 
 ### Size
-**total cells: 111**
+**total cells: 150**
 ## Kernel Checks: 
 
 > [!CAUTION]
- > Error: Python versions don't match. The notebook is using **python-3.10.11**, when **python-3.9** is required.
+ > Error: Python versions don't match. The notebook is using **python-3.11.5**, when **python-3.9** is required.
 
 > [!TIP]
  > Try changing **runtime.txt** to resolve the error above.
@@ -24,24 +24,24 @@ code: 42
 
 
 ### Check HTML
-- Cell 89 - Encountered a start tag: https:
-- Cell 89 - Encountered an end tag: https:
-- Cell 89 - Encountered a start tag: https:
-- Cell 89 - Encountered a start tag: https:
-- Cell 89 - Encountered a start tag: https:
-- Cell 89 - Encountered a start tag: https:
+- Cell 104 - Encountered a start tag: https:
+- Cell 104 - Encountered an end tag: https:
+- Cell 104 - Encountered a start tag: https:
+- Cell 104 - Encountered a start tag: https:
+- Cell 105 - Encountered a start tag: https:
+- Cell 105 - Encountered a start tag: https:
 
 
 ### Check Output Sizes and Rules
 - Output cell 5 size: 1408.40 KB
 > First words of input cell: from IPython.display import Image display(Image("media/cover_image.png"))
-- Output cell 50 size: 2092.79 KB
+- Output cell 56 size: 2092.79 KB
 > First words of input cell: display(Image("media/nn_homepage.png"))
-- Output cell 54 size: 1503.04 KB
+- Output cell 60 size: 1503.04 KB
 > First words of input cell: display(Image("media/nn_first_commit_repo.png"))
-- Table found in output of cell 91
+- Table found in output of cell 109
 > First words of input cell: import networkx as nx import
-- Output cell 106 size: 1288.37 KB
+- Output cell 137 size: 1288.37 KB
 > First words of input cell: display(Image("media/attribute_filter.gif"))
 
 Total output size: 9979.18 KB
@@ -67,19 +67,19 @@ Total number of audios: 1
 | Tag | Cell | Remark |
 | --- | --- | --- |
 | image/png | 5 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=5) |
-| image/png | 21 | Correct tagging |
-| image/png | 50 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=50) |
-| image/png | 52 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=52) |
-| image/png | 54 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=54) |
-| image/png | 87 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=87) |
-| text/html | 91 | Table is not tagged properly |
-| image/png | 95 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=95) |
-| image/png | 97 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=97) |
-| image/png | 99 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=99) |
+| image/png | 23 | Correct tagging |
+| image/png | 56 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=56) |
+| image/png | 58 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=58) |
+| image/png | 60 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=60) |
 | image/png | 101 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=101) |
-| text/plain | 104 | Should be replaced |
-| text/plain | 106 | Should be replaced |
-| image/png | 108 | Correct tagging |
+| text/html | 109 | Table is not tagged properly |
+| image/png | 113 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=113) |
+| image/png | 118 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=118) |
+| image/png | 121 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=121) |
+| image/png | 124 | Image is not tagged properly [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=124) |
+| text/plain | 129 | Should be replaced |
+| text/plain | 137 | Should be replaced |
+| image/png | 142 | Correct tagging |
 
 
 ### Check Tags
@@ -92,119 +92,152 @@ Total number of audios: 1
 - Cell 7: Tags: ['keywords']
 - Cell 8: Tags: ['abstract']
 - Cell 10: Tags: ['narrative']
-- Cell 11: Tags: ['hermeneutics']
+- Cell 11: Tags: ['narrative']
 - Cell 12: Tags: ['hermeneutics']
 - Cell 13: Tags: ['hermeneutics']
-- Cell 14: Tags: ['hermeneutics']
-- Cell 15: Tags: ['hermeneutics']
+- Cell 14: Tags: ['narrative']
+- Cell 15: Tags: ['narrative']
 - Cell 16: Tags: ['hermeneutics']
-- Cell 17: Tags: ['hermeneutics']
-- Cell 18: Tags: ['figure-whatisdh-tools-*', 'narrative', 'hermeneutics']
+- Cell 17: Tags: ['narrative']
+- Cell 18: Tags: ['hermeneutics']
+- Cell 19: Tags: ['figure-whatisdh-tools-*', 'narrative', 'hermeneutics']
   - Invalid tag: figure-whatisdh-tools-*
-- Cell 19: Tags: ['hermeneutics']
-- Cell 21: Tags: ['figure-wordcloud-*', 'narrative', 'hermeneutics']
-- Cell 22: Tags: ['hermeneutics']
-- Cell 23: Tags: ['narrative']
-- Cell 24: Tags: ['hermeneutics']
-- Cell 25: Tags: ['hermeneutics']
-- Cell 26: Tags: ['hermeneutics']
+- Cell 20: Tags: ['narrative']
+- Cell 21: Tags: ['narrative']
+- Cell 23: Tags: ['figure-wordcloud-*', 'narrative', 'hermeneutics']
+- Cell 24: Tags: ['narrative']
+- Cell 25: Tags: ['narrative']
+- Cell 26: Tags: ['narrative']
 - Cell 27: Tags: ['hermeneutics']
 - Cell 28: Tags: ['hermeneutics']
 - Cell 29: Tags: ['hermeneutics']
 - Cell 30: Tags: ['hermeneutics']
 - Cell 31: Tags: ['hermeneutics']
-- Cell 32: Tags: ['hermeneutics']
+- Cell 32: Tags: ['narrative']
 - Cell 33: Tags: ['hermeneutics']
-- Cell 34: Tags: ['hermeneutics']
+- Cell 34: Tags: ['narrative']
 - Cell 35: Tags: ['hermeneutics']
-- Cell 36: Tags: ['hermeneutics']
+- Cell 36: Tags: ['narrative']
 - Cell 37: Tags: ['hermeneutics']
-- Cell 38: Tags: ['hermeneutics']
-- Cell 39: Tags: ['figure-network-tools-over-time-chart-*', 'narrative', 'hermeneutics']
-  - Invalid tag: figure-network-tools-over-time-chart-*
+- Cell 38: Tags: ['narrative']
+- Cell 39: Tags: ['hermeneutics']
 - Cell 40: Tags: ['hermeneutics']
-- Cell 41: Tags: ['hermeneutics']
-- Cell 42: Tags: ['figure-relatie-popularity-chart-*', 'narrative', 'hermeneutics']
+- Cell 41: Tags: ['figure-network-tools-over-time-chart-*', 'narrative', 'hermeneutics']
+  - Invalid tag: figure-network-tools-over-time-chart-*
+- Cell 42: Tags: ['narrative']
+- Cell 43: Tags: ['hermeneutics']
+- Cell 44: Tags: ['figure-relatie-popularity-chart-*', 'narrative', 'hermeneutics']
   - Invalid tag: figure-relatie-popularity-chart-*
-- Cell 43: Tags: ['narrative']
-- Cell 44: Tags: ['hermeneutics']
-- Cell 45: Tags: ['hermeneutics']
-- Cell 46: Tags: ['figure-nn-chart-*', 'narrative', 'hermeneutics']
+- Cell 45: Tags: ['narrative']
+- Cell 46: Tags: ['hermeneutics']
+- Cell 47: Tags: ['hermeneutics']
+- Cell 48: Tags: ['figure-nn-chart-*', 'narrative', 'hermeneutics']
   - Invalid tag: figure-nn-chart-*
-- Cell 47: Tags: ['narrative']
 - Cell 49: Tags: ['narrative']
-- Cell 50: Tags: ['figure-nn-homepage-*', 'narrative']
-  - Invalid tag: figure-nn-homepage-*
+- Cell 50: Tags: ['narrative']
 - Cell 51: Tags: ['narrative']
-- Cell 52: Tags: ['figure-nn-original-homepage-*', 'narrative']
-  - Invalid tag: figure-nn-original-homepage-*
+- Cell 52: Tags: ['narrative']
 - Cell 53: Tags: ['narrative']
-- Cell 54: Tags: ['figure-nn-first-commit-repo-*', 'narrative']
-  - Invalid tag: figure-nn-first-commit-repo-*
 - Cell 55: Tags: ['narrative']
-- Cell 56: Tags: ['hermeneutics']
+- Cell 56: Tags: ['figure-nn-homepage-*', 'narrative']
+  - Invalid tag: figure-nn-homepage-*
 - Cell 57: Tags: ['narrative']
-- Cell 58: Tags: ['narrative']
-- Cell 59: Tags: ['hermeneutics']
-- Cell 60: Tags: ['hermeneutics']
-- Cell 61: Tags: ['hermeneutics']
+- Cell 58: Tags: ['figure-nn-original-homepage-*', 'narrative']
+  - Invalid tag: figure-nn-original-homepage-*
+- Cell 59: Tags: ['narrative']
+- Cell 60: Tags: ['figure-nn-first-commit-repo-*', 'narrative']
+  - Invalid tag: figure-nn-first-commit-repo-*
+- Cell 61: Tags: ['narrative']
 - Cell 62: Tags: ['hermeneutics']
-- Cell 63: Tags: ['hermeneutics']
-- Cell 65: Tags: ['figure-infrastructure-tool-chart-*', 'narrative', 'hermeneutics']
-  - Invalid tag: figure-infrastructure-tool-chart-*
-- Cell 66: Tags: ['hermeneutics']
-- Cell 67: Tags: ['narrative']
-- Cell 68: Tags: ['narrative']
+- Cell 63: Tags: ['narrative']
+- Cell 64: Tags: ['narrative']
+- Cell 65: Tags: ['narrative']
+- Cell 66: Tags: ['narrative']
+- Cell 67: Tags: ['hermeneutics']
+- Cell 68: Tags: ['hermeneutics']
 - Cell 69: Tags: ['hermeneutics']
 - Cell 70: Tags: ['hermeneutics']
-- Cell 71: Tags: ['hermeneutics']
-- Cell 72: Tags: ['figure-network-analysis-chart-*', 'narrative', 'hermeneutics']
-  - Invalid tag: figure-network-analysis-chart-*
-- Cell 73: Tags: ['hermeneutics']
+- Cell 72: Tags: ['figure-infrastructure-tool-chart-*', 'narrative', 'hermeneutics']
+  - Invalid tag: figure-infrastructure-tool-chart-*
+- Cell 73: Tags: ['narrative']
 - Cell 74: Tags: ['narrative']
 - Cell 75: Tags: ['narrative']
 - Cell 76: Tags: ['narrative']
-- Cell 77: Tags: ['narrative']
-- Cell 78: Tags: ['narrative']
+- Cell 77: Tags: ['hermeneutics']
+- Cell 78: Tags: ['hermeneutics']
 - Cell 79: Tags: ['hermeneutics']
 - Cell 80: Tags: ['hermeneutics']
-- Cell 81: Tags: ['hermeneutics']
-- Cell 82: Tags: ['figure-tool-algorithmic-criticism-chart-*', 'narrative', 'hermeneutics']
-  - Invalid tag: figure-tool-algorithmic-criticism-chart-*
-- Cell 83: Tags: ['hermeneutics']
+- Cell 81: Tags: ['figure-network-analysis-chart-*', 'narrative', 'hermeneutics']
+  - Invalid tag: figure-network-analysis-chart-*
+- Cell 82: Tags: ['narrative']
+- Cell 83: Tags: ['narrative']
 - Cell 84: Tags: ['narrative']
+- Cell 85: Tags: ['narrative']
 - Cell 86: Tags: ['narrative']
-- Cell 87: Tags: ['figure-nn-feature-wishlist-*', 'narrative']
-  - Invalid tag: figure-nn-feature-wishlist-*
+- Cell 87: Tags: ['narrative']
 - Cell 88: Tags: ['narrative']
 - Cell 89: Tags: ['hermeneutics']
-- Cell 90: Tags: ['narrative']
-- Cell 91: Tags: ['table-six-degrees-*', 'narrative', 'hermeneutics']
-  - Invalid tag: table-six-degrees-*
-- Cell 92: Tags: ['narrative']
-- Cell 93: Tags: ['hermeneutics']
+- Cell 90: Tags: ['hermeneutics']
+- Cell 91: Tags: ['hermeneutics']
+- Cell 92: Tags: ['figure-tool-algorithmic-criticism-chart-*', 'narrative', 'hermeneutics']
+  - Invalid tag: figure-tool-algorithmic-criticism-chart-*
+- Cell 93: Tags: ['narrative']
 - Cell 94: Tags: ['narrative']
-- Cell 95: Tags: ['figure-nn-first-commit-*', 'narrative']
-  - Invalid tag: figure-nn-first-commit-*
+- Cell 95: Tags: ['narrative']
 - Cell 96: Tags: ['narrative']
-- Cell 97: Tags: ['figure-networkx-graph-*', 'narrative', 'hermeneutics']
-  - Invalid tag: figure-networkx-graph-*
+- Cell 97: Tags: ['narrative']
 - Cell 98: Tags: ['narrative']
-- Cell 99: Tags: ['figure-nn-commit-list-*', 'narrative']
-  - Invalid tag: figure-nn-commit-list-*
 - Cell 100: Tags: ['narrative']
-- Cell 101: Tags: ['figure-nn-october-meeting-*', 'narrative']
-  - Invalid tag: figure-nn-october-meeting-*
+- Cell 101: Tags: ['figure-nn-feature-wishlist-*', 'narrative']
+  - Invalid tag: figure-nn-feature-wishlist-*
 - Cell 102: Tags: ['narrative']
-- Cell 103: Tags: ['hermeneutics']
-- Cell 104: Tags: ['figure-select-viz-*', 'narrative']
-  - Invalid tag: figure-select-viz-*
-- Cell 106: Tags: ['figure-attribute-filter-*', 'narrative']
-  - Invalid tag: figure-attribute-filter-*
+- Cell 103: Tags: ['narrative']
+- Cell 104: Tags: ['hermeneutics']
+- Cell 105: Tags: ['hermeneutics']
+- Cell 106: Tags: ['narrative']
 - Cell 107: Tags: ['narrative']
-- Cell 108: Tags: ['figure-customize-*', 'narrative']
-- Cell 109: Tags: ['narrative']
-- Cell 111: Tags: ['narrative']
+- Cell 108: Tags: ['narrative']
+- Cell 109: Tags: ['table-six-degrees-*', 'narrative', 'hermeneutics']
+  - Invalid tag: table-six-degrees-*
+- Cell 110: Tags: ['narrative']
+- Cell 111: Tags: ['hermeneutics']
+- Cell 112: Tags: ['narrative']
+- Cell 113: Tags: ['figure-nn-first-commit-*', 'narrative']
+  - Invalid tag: figure-nn-first-commit-*
+- Cell 114: Tags: ['narrative']
+- Cell 115: Tags: ['narrative']
+- Cell 116: Tags: ['narrative']
+- Cell 117: Tags: ['narrative']
+- Cell 118: Tags: ['figure-networkx-graph-*', 'narrative', 'hermeneutics']
+  - Invalid tag: figure-networkx-graph-*
+- Cell 119: Tags: ['narrative']
+- Cell 120: Tags: ['narrative']
+- Cell 121: Tags: ['figure-nn-commit-list-*', 'narrative']
+  - Invalid tag: figure-nn-commit-list-*
+- Cell 122: Tags: ['narrative']
+- Cell 123: Tags: ['narrative']
+- Cell 124: Tags: ['figure-nn-october-meeting-*', 'narrative']
+  - Invalid tag: figure-nn-october-meeting-*
+- Cell 125: Tags: ['narrative']
+- Cell 126: Tags: ['narrative']
+- Cell 127: Tags: ['hermeneutics']
+- Cell 128: Tags: ['hermeneutics']
+- Cell 129: Tags: ['figure-select-viz-*', 'narrative']
+  - Invalid tag: figure-select-viz-*
+- Cell 137: Tags: ['figure-attribute-filter-*', 'narrative']
+  - Invalid tag: figure-attribute-filter-*
+- Cell 138: Tags: ['narrative']
+- Cell 139: Tags: ['narrative']
+- Cell 140: Tags: ['narrative']
+- Cell 141: Tags: ['narrative']
+- Cell 142: Tags: ['figure-customize-*', 'narrative']
+- Cell 143: Tags: ['narrative']
+- Cell 144: Tags: ['narrative']
+- Cell 145: Tags: ['narrative']
+- Cell 146: Tags: ['narrative']
+- Cell 148: Tags: ['narrative']
+- Cell 149: Tags: ['narrative']
+- Cell 150: Tags: ['narrative']
 > [!WARNING]
 > The following tags are missing or invalid
 
@@ -302,11 +335,11 @@ Invalid URL (Other - 302): https://github.com/jrladd/network_navigator/pull/7>.
 ### Check JavaScript
 **WARNING: 7 output cells contain JavaScript code.**
 
--  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=18)
--  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=39)
--  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=42)
--  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=46)
--  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=65)
+-  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=19)
+-  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=41)
+-  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=44)
+-  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=48)
 -  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=72)
--  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=82)
+-  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=81)
+-  [Check here ](https://journalofdigitalhistory.org/en/notebook-viewer/JTJGcHJveHktZ2l0aHVidXNlcmNvbnRlbnQlMkZqZGgtb2JzZXJ2ZXIlMkZuQVc0RTVldGtNUjYlMkZtYWluJTJGYXJ0aWNsZS5pcHluYg==?idx=92)
 
